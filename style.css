@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.container {
+    width: 100%;
+    max-width: 480px;
+    background: rgba(255,255,255,0.95);
+    padding: 25px;
+    margin-top: 40px;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(102, 126, 234, 0.4);
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+    font-size: 16px;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+button {
+    flex: 1;
+    padding: 12px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transition: all 0.3s ease;
+}
+button:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+.suggest-btn {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+.suggest-btn:hover {
+    background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
+}
+#movieContainer {
+    margin-top: 20px;
+}
+.movie {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    border-radius: 12px;
+    padding: 15px;
+    margin-top: 15px;
+    color: white;
+    box-shadow: 0 10px 30px rgba(240, 147, 251, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.movie:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(240, 147, 251, 0.5);
+}
+.movie img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.suggestions {
+    background: #fff3f8;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    text-align: left;
+    box-shadow: 0 10px 25px rgba(240, 147, 251, 0.2);
+}
+.suggestions h2 {
+    color: #764ba2;
+    margin-bottom: 10px;
+}
+.suggestions ul {
+    padding-left: 20px;
+}
+.suggestions li {
+    margin-bottom: 6px;
+}
